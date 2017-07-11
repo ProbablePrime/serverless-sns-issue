@@ -1,0 +1,22 @@
+{
+  "name": "sns-issue",
+  "version": "1.0.0",
+  "description": "Deploying this leads to:",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ProbablePrime/servless-sns-issue.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ProbablePrime/servless-sns-issue/issues"
+  },
+  "homepage": "https://github.com/ProbablePrime/servless-sns-issue#readme",
+  "dependencies": {
+    "aws-sdk": "^2.82.0"
+  }
+}

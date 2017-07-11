@@ -26,13 +26,14 @@ functions:
     handler: handler.hello
     environment:
       SNS_ARN:
-          Fn::GetAtt:
-              - snsTopic
-              - Arn
-
+          Ref: snsTopicResource
 resources:
   Resources:
-    snsTopic: 
+    snsTopicResource: 
             Type: AWS::SNS::Topic 
             Properties: 
                 TopicName: snsTopic
+  Outputs:
+    SnsTopicName:
+      Value:
+        Ref: snsTopicResource
